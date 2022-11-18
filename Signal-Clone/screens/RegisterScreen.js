@@ -47,7 +47,7 @@ const RegisterScreen = ({ navigation }) => {
         <Input
           placeholder="Email"
           type="email"
-          value={email}
+          value={email.toLowerCase()}
           onChangeText={(text) => setEmail(text)}
         />
         <Input
