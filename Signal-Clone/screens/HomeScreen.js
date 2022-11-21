@@ -14,7 +14,6 @@ import { AntDesign, SimpleLineIcons } from "@expo/vector-icons";
 
 const HomeScreen = ({ navigation }) => {
   const [chats, setChats] = useState([]);
-  // console.log(chats);
 
   useEffect(() => {
     const unsubscribe = db.collection("chats").onSnapshot((snapshots) => {
